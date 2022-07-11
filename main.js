@@ -48,7 +48,7 @@ function createReloadButton(){
     });  
    
     $reloadButtonDiv.appendChild($reloadButton);
-    $arenas.appendChild($reloadButtonDiv)
+    $arenas.appendChild($reloadButtonDiv);
 }
 
 function createPlayer( playerObj) {
@@ -78,9 +78,9 @@ function elHP() {
     return  document.querySelector('.player' + this.player + ' .life');
 }
 
-function changeHP(num) {
+function changeHP(randomNumber) {
     
-    this.hp -= num
+    this.hp -= randomNumber
     if(this.hp <=0){
         this.hp = 0
     } 
